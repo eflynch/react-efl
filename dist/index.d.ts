@@ -12,4 +12,4 @@ declare type XYPadProps = {
 };
 declare function XYPad(props: XYPadProps): JSX.Element;
 
-export { XYPad };
+export { Position, XYPad };

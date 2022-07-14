@@ -2458,6 +2458,8 @@ if (process.env.NODE_ENV === 'production') {
   react.exports = react_development;
 }
 
+var React = react.exports;
+
 function XYPad(props) {
     var width = props.width || 100;
     var height = props.height || 100;
