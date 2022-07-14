@@ -2456,7 +2456,7 @@ if (process.env.NODE_ENV === 'production') {
 
 var React = react.exports;
 
-function XYPad(props) {
+var XYPad = function (props) {
     var width = props.width || 100;
     var height = props.height || 100;
     var circleRadius = props.circleRadius || 0.1;
@@ -2532,7 +2532,7 @@ function XYPad(props) {
     return (React.createElement("svg", { viewBox: "".concat(-circleRadius, " ").concat(-circleRadius, " ").concat(1 + circleRadius, " ").concat(1 + circleRadius), width: width, height: height },
         React.createElement("rect", { ref: rectRef, rx: circleRadius, x: -circleRadius, y: -circleRadius, width: 1 + circleRadius, height: 1 + circleRadius, fill: "black" }),
         React.createElement("circle", { ref: circleRef, fill: "white", cx: circlePosition.x, cy: circlePosition.y, r: circleRadius })));
-}
+};
 
 export { XYPad };
 //# sourceMappingURL=index.js.map

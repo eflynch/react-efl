@@ -11,7 +11,7 @@ type XYPadProps = {
     onChange:(position:Position)=>void
 };
 
-export default function XYPad(props:XYPadProps):JSX.Element {
+const XYPad = (props:XYPadProps) => {
     const width = props.width || 100;
     const height = props.height || 100;
     const circleRadius = props.circleRadius || 0.1;
@@ -95,3 +95,5 @@ export default function XYPad(props:XYPadProps):JSX.Element {
         </svg>
     );
 }
+
+export default XYPad;

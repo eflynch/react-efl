@@ -10,6 +10,6 @@ declare type XYPadProps = {
     circleRadius?: number;
     onChange: (position: Position) => void;
 };
-declare function XYPad(props: XYPadProps): JSX.Element;
+declare const XYPad: (props: XYPadProps) => JSX.Element;
 
 export { Position, XYPad };
