@@ -27,6 +27,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
     ],
+    external: Object.keys(packageJson.peerDependencies || {}),
   },
   {
     input: "dist/esm/types/index.d.ts",
